@@ -66,6 +66,11 @@
         .container h1 {
             text-align: center;
         }
+
+        .btn {
+            margin: auto;
+            background-color: rgb(202, 246, 246);
+        }
     </style>
 </head>
 
@@ -78,7 +83,7 @@
         </ul>
         <div class="container">
             <h1>Mess Registration</h1>
-            <form action="index.php" method="post">
+            <form name="Mess Form">
                 <div class="form-group" id="name">
                     <input type="text" name="name" placeholder="Enter Your Name">
                 </div>
@@ -91,15 +96,17 @@
                 <div class="form-group">
                     <input type="number" name="contact" placeholder="Enter Contact Number">
                 </div>
+                <pre>
                 <div class="form-group">
-                    <button class="btn">Submit</button> 
+                    <button class="btn" onclick="Done()">Submit</button>
                 </div>
-                <!-- INSERT INTO `mess` (`name`, `rollno`, `enroll`, `contact`) VALUES ('shradha', '2206031', '220447', '8757623348');69- -->
-                <!-- <script>
+                </pre>
+
+                <script>
                     function Done() {
                         if ((document.forms["Mess Form"]["name"].value == "") || (document.forms["Mess Form"]["rollno"].value == "") || (document.forms["Mess Form"]["contact"].value == "") || (document.forms["Mess Form"]["enroll"].value == "")) { alert("Fill all details"); }
                         else { alert("You are successfully registered."); }
-                    } </script> -->
+                    } </script>
             </form>
         </div>
 </body>
