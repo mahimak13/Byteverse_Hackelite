@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        body {
+            background-image: url("gh2.jpg");
+        }
+
+        .a {margin-top: 30px;
+            font-size: 60px;
+            
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            box-shadow: -10px -10px 20px black;
+            margin-left: 500px;
+            margin-right: 500px;
+
+        }
+
+        .b {margin:20px;
+            padding-top: 30px;
+            font-size: 50px;
+            box-shadow: 20px 20px 20px black;
+        
+
+        }
+        button{
+            font-size: 30px;
+            
+        }
+
+        button {
+           text-decoration: none;
+            background-image: linear-gradient(rgb(19, 164, 174), rgb(11, 202, 8));
+            border-radius: 14px;
+            margin-left: 800px;
+            margin-right: 800px;
+            box-shadow: 10px 10px 10px rgb(78, 2, 64);
+        font-size: 60px;
+        }a{
+            text-decoration: none;
+            font-size: 50px;
+        }
+
+        button:hover {
+            background-image: linear-gradient(rgb(152, 177, 25), rgb(91, 6, 58));
+        }
+
+        .container {
+            padding: 16px;
+            font-size: 25px;
+            color: rgb(236, 142, 210);
+            margin: 0px 20px 20px ;
+            margin-left: 200px;
+            margin-right: 900px;
+margin-bottom:10px ;
+        }
+
+        input[type=text],
+        input[type=password] {
+
+            color: #22a442;
+            background: #d9d5f1;
+            margin-left: 500px;
+            margin-right: 500px;
+            display: inline-block;
+            border: 1px solid #252424;
+            border-radius: 10px;
+            box-sizing: border-box;
+            font-size: 40px;
+        }
+
+        span.psw {
+            font-size: 20px;
+            float: center;
+            padding-top: 16px;
+            color: black;
+            margin-top: 30px;
+            margin-left: 540px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+        }
+
+        span.psw.a {
+            color: rgb(108, 17, 53);
+        }
+
+        .signup-link {
+            margin-top: 20px;
+            color: rgb(14, 29, 9);
+            background-color: #b77487;
+            margin-left: 650px;
+            margin-right: 650px;
+            border-radius: 10px;
+            box-shadow: 10px 10px 10px rgb(17, 14, 17);
+        }
+
+        .link {
+            color: #B2A4FF;
+        }
+
+        .link:hover {
+            color: #14089a
+        }
+    </style>
+    <!-- <link rel="stylesheet" href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"> -->
+    <title>Login page</title>
+</head>
+
+<body>
+    <div align="center">
+        <div class="a">
+            <h1>
+                Login
+            </h1>
+        </div>
+        <div class="b">
+            <form >
+                <label for="name">Username</label><br>
+                <input type="text" placeholder="Type your username" name="username" required>
+                <br>
+                <label for="password"> Password</label><br>
+                <input type="password" placeholder="Type your password" name="password" required>
+                <br><br>
+                <!-- <div id="bu"><button><a href="http://127.0.0.1:5501/home.html">Login</a></button></div> -->
+                <button><a href="http://127.0.0.1:5501/home1.html">
+                    Login
+                </a></button>
+
+                
+                <div class="signup-link">Don't have an account? <a class="link"
+                        href="http://127.0.0.1:5501/signup.html">Sign up</a></div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

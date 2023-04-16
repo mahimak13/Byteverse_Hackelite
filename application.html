@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leave Application</title>
+    <style>
+        form{
+        font-size: 35px;
+        }
+        pre{
+            font-size: 35px;
+        }
+    </style>
+</head>
+<body>
+    <body>
+        <h1 style="text-align: center;">Leave Application</h1>
+        <div class="container">
+            <pre>
+    To,
+    The Warden
+    Ganga Hostel,NIT Patna  </pre>
+            <form>
+          
+            <pre><p class="inp">Name:</p><input type="text" name="name"></pre>
+            <pre><p class="inp">Roll No.</p><input type="number" name="name"></pre>
+            <pre><p class="inp">Room No.</p><input type="number" name="name"></pre>
+            <pre> <p class="inp">Date Of Leaving</p><input type="date" name="name"></pre>
+            <pre> <p class="inp">Date Of Returning</p><input type="date" name="name"></pre>
+            <p class="inp">Reason for leave:</p>
+                <textarea id="subject" name="subject" placeholder="Enter reason"  ></textarea>
+                <br><div class="reason"> <pre >
+     <h4>Note:</h4>  NIT Patna is not responsible for my safety during my leave period</pre></div>
+                   <br><br><br><br><br><br><br><br><br>
+    <div style="float: right",align:right>
+        
+            <p style="font-size: 25px;"><b>Thanks</b></p><br>
+            Sign: <br><input type="file" accept="image/*" />
+    
+            Name:<br></Name:br><input type="text" name="name"><br><br>
+            Contact No. <br><input type="number" name="name"><br><br>
+            Address and Contact No. of the place being visited <br>
+             <textarea id="address" name="address" placeholder=" "  ></textarea></div> <br><br><br>
+           <div  style=" align-content: center; height: 50px;width: 50px;" ><button type="submit" onclick="Okay()"
+             style="display: flexbox; height: 25px; width: 100px; background-color: rgb(7, 148, 2);">Submit!</button>
+             </div> </form> 
+             <script>
+                function okay(){
+               let inp= document.getElementsByClassName("inp").value;
+               if(inp==""){
+                alert("Please, fill all the  details ");    }
+                else{
+                    alert("Form has been sent to the warden")
+                }
+                    
+                    
+                }
+             </script>
+    </body>
+    </html>
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signuppage</title>
+    <style>
+       body{
+            background-image: linear-gradient(rgb(243, 164, 243),rgb(0, 157, 255),pink);}
+        
+        
+        
+            h1{
+            font-size: 50px;
+           box-shadow: 10px 10px 10px black;
+        }
+        input[type=text], input[type=password], input[type=email],input[type=number] {
+		
+			font-size: 27px;
+        margin-left: 700px;
+    margin-right: 700px;
+        display: inline-block;
+        border: 1px solid #200000;
+        border-radius: 10px;
+       box-sizing: border-box;
+       background: #363030;
+       color: aqua;
+    }
+    select{
+        font-size: 27px;
+        margin-left: 700px;
+    margin-right: 700px;
+        display: inline-block;
+        border: 1px solid #200000;
+        border-radius: 10px;
+       box-sizing: border-box;
+       background: #363030;
+       color: rgb(76, 177, 177);
+    }
+    label{
+        color: rgb(66, 3, 47);
+        font-size: larger;
+    }
+    button{
+        font-size: larger;
+        border: 1px solid #200000;
+        border-radius: 10px;
+       box-sizing: border-box;
+       background-image: linear-gradient(rgb(231, 87, 209),rgb(205, 7, 43),rgb(0, 165, 177));
+       color: rgb(6, 7, 7);
+    }
+    button:hover{
+        background-image: linear-gradient(rgb(21, 21, 173),rgb(18, 156, 23),rgb(75, 16, 16));
+    }
+    a{
+        color: black;
+        text-decoration: none;
+    }
+    a:hover{
+        color: rgb(61, 167, 228);
+    }
+    </style>
+</head>
+<body>
+    <div align="center" class="d">
+
+        <h1> Sign Up</h1>
+        <form>
+        <h2>  <label for="name">First Name:&nbsp<br> <input type="text" placeholder=" Enter your first name"></label><br><br>
+            <label for="name"> Last Name:&nbsp <br><input type="text" placeholder=" Enter your last name"></label><br><br>
+            <label for="email">Email Id:&nbsp<br> <input type="email" placeholder=" Enter your email"></label><br><br>
+            <label for="password"> password:&nbsp<br> <input type="password" placeholder=" Enter the password"></label><br><br>
+            <label for="branch"> Branch:&nbsp <br>
+        <select >
+        <option>CSE</option>
+        <option>ECE</option>
+        <option>EE</option>
+        <option>CE</option>
+        <option>ME</option>
+        <option>MCE</option>
+        </select></label><br>
+        <br>
+        <label for="rollno"> Roll no:&nbsp<br> <input type="number" placeholder=" Enter your rollno"></label><br><br>
+        <button ><a href="http://127.0.0.1:5501/home.html">Sign up</a></button>
+	</form>
+	<footer>
+			<p>Already have an account? <a href="http://127.0.0.1:5501/login.html#">Login here</a></p>
+	</footer>
+    </form>
+    </div>
+</body>
+</html>

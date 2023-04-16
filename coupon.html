@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .container {
+            border: 2px solid white;
+            margin:auto;
+
+            box-shadow: 10px 20px 10px black;
+            width: 60%;
+            border-radius: 28px;
+        }
+
+        .form-group input {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            text-align: center;
+            display: block;
+            width: 300px;
+            padding: 2px;
+            bottom: 2px solid black;
+            margin: 11px auto;
+            font-size: 25px;
+            border-radius: 8px;
+        }
+
+        .container h1 {
+            text-align: center;
+        }
+    </style>
+</head>
+<body background="https://envato-shoebox-0.imgix.net/twenty20/production/uploads/items/6be349f1-ab85-422f-8513-aff95b7248cf/source?auto=compress%2Cformat&fit=max&mark=https%3A%2F%2Felements-assets.envato.com%2Fstatic%2Fwatermark2.png&markalign=center%2Cmiddle&markalpha=18&w=1000&s=c2d52ff6cc87abb37c053b523b029c58">
+    <div class="container">
+        <h1>COUPON ISSUE</h1>
+        <form name="Mess Form">
+            <div class="form-group" id="name">
+                <input type="text" name="name" placeholder="Enter Your Name">
+            </div>
+            <div class="form-group">
+                <input type="number" name="rollno" placeholder="Enter Your Roll-No">
+            </div>
+            <div class="form-group">
+                <input type="number" name="enroll" placeholder="Enter Your Enrollment-No">
+            </div>
+            <div class="form-group">
+                <input type="number" name="contact" placeholder="Enter Contact Number">
+            </div>
+            <div class="form-group">
+                <input type="button" onclick="Done()" name="" value="Submit">
+            </div>
+            <script>
+                function Done() {
+                    if ((document.forms["Mess Form"]["name"].value == "") || (document.forms["Mess Form"]["rollno"].value == "") || (document.forms["Mess Form"]["contact"].value == "") || (document.forms["Mess Form"]["enroll"].value == "")) { alert("Fill all details"); }
+                    else { alert("Congrats!! your coupon is sucessfully issued"); }
+                } </script>
+        </form>
+    </div>
+</body>
+</html>

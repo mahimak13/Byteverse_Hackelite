@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+            background: url("img.jpg");
+            background-size: cover;
+        }
+
+        .mid {
+            display: block;
+            width: 40%;
+            margin: 12px auto;
+
+
+        }
+
+        .navbar {
+            display: inline-block;
+
+        }
+
+        .navbar li {
+            display: inline-block;
+            font-size: 28px;
+        }
+
+        .navbar li a {
+            color: rgb(44, 186, 218);
+            text-decoration: none;
+            padding: 20px 10px;
+        }
+
+        .navbar li a:hover {
+            color: blueviolet;
+        }
+
+        .container {
+            border: 2px solid white;
+            margin-left: -450px;
+
+            box-shadow: 10px 20px 10px black;
+            width: 60%;
+            border-radius: 28px;
+        }
+
+        .form-group input {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            text-align: center;
+            display: block;
+            width: 300px;
+            padding: 2px;
+            bottom: 2px solid black;
+            margin: 11px auto;
+            font-size: 25px;
+            border-radius: 8px;
+        }
+
+        .container h1 {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="mid">
+        <ul class="navbar">
+            <li><a href="about.html">About</a></li>
+            <li><a href="messmenu.html">Mess Menu</a></li>
+            <li><a href="coupon.html">Coupon Issue</a></li>
+        </ul>
+        <div class="container">
+            <h1>Mess Registration</h1>
+            <form action="index.php" method="post">
+                <div class="form-group" id="name">
+                    <input type="text" name="name" placeholder="Enter Your Name">
+                </div>
+                <div class="form-group">
+                    <input type="number" name="rollno" placeholder="Enter Your Roll-No">
+                </div>
+                <div class="form-group">
+                    <input type="number" name="enroll" placeholder="Enter Your Enrollment-No">
+                </div>
+                <div class="form-group">
+                    <input type="number" name="contact" placeholder="Enter Contact Number">
+                </div>
+                <div class="form-group">
+                    <button class="btn">Submit</button> 
+                </div>
+                <!-- INSERT INTO `mess` (`name`, `rollno`, `enroll`, `contact`) VALUES ('shradha', '2206031', '220447', '8757623348');69- -->
+                <!-- <script>
+                    function Done() {
+                        if ((document.forms["Mess Form"]["name"].value == "") || (document.forms["Mess Form"]["rollno"].value == "") || (document.forms["Mess Form"]["contact"].value == "") || (document.forms["Mess Form"]["enroll"].value == "")) { alert("Fill all details"); }
+                        else { alert("You are successfully registered."); }
+                    } </script> -->
+            </form>
+        </div>
+</body>
+
+</html>
